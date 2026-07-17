@@ -1,4 +1,14 @@
 
+<?php
+session_start();
+
+// DISESUAIKAN: Mengubah 'status_login' menjadi 'login' agar sama dengan file login.php Anda
+if (!isset($_SESSION['login']) || $_SESSION['login'] !== true) {
+    // Jika belum login, paksa kembali ke halaman login
+    header("Location: login.php");
+    exit(); // Menghentikan eksekusi script selanjutnya
+}
+?>
 <?php  include 'partials/cms/header.php';?>
 <body id="page-top">
 

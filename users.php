@@ -98,13 +98,13 @@ require 'controller/controluser.php';
                                             <td><img src="images/<?= $user["gambar"]; ?>" alt="" width="100" height="100"></td>
                                             <td><?= $user["role"]; ?></td>
                                            
-                                            <td><a href="/hapususer.php?id=<?= $user['id']; ?>" class="btn btn-danger btn-icon-split">
+                                            <td><a href="hapususer.php?id=<?= $user['id']; ?>" class="btn btn-danger btn-icon-split">
                                                     <span class="icon text-white-50">
                                                          <i class="fas fa-trash"></i>
                                                     </span>
                                                    
                                     </a>
-                                           <a href="/edituser.php?id=<?= $user['id']; ?>" class="btn btn-warning btn-icon-split">
+                                           <a href="edituser.php?id=<?= $user['id']; ?>" class="btn btn-warning btn-icon-split">
                                                     <span class="icon text-white-50">
                                                          <i class="fas fa-edit"></i>
                                                     </span>
